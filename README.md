@@ -28,10 +28,11 @@ gem "colorize_logs"
 If bundler is not being used to manage dependencies, install the gem by executing:
 
 $ gem install colorize_logs
+
+
 Usage
 Create an initializer file config/initializers/colorize_logs.rb and add the following code:
 
-# frozen_string_literal: true
 
 colorize_logs_formatter = ColorizeLogs::Formatter.new
 
@@ -50,4 +51,7 @@ colorize_logs_formatter.configure do
 end
 
 ::Rails.logger.formatter = colorize_logs_formatter
+
+
+
 That's it. Restart your server and you should see the logs in different colors.
